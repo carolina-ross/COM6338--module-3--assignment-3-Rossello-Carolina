@@ -27,8 +27,15 @@ var questionsArr = [
 ]
 
 function runQuiz() {
+    var numOfCorrect = 0
+
     for(var i = 0; i < questionsArr.length; i++) {
         var question = questionsArr[i]
-        var answer = confirm(question)
+        var answer = confirm(question);
+
+        numOfCorrect += questionsArr[i][1];
+        var scoreTest = Math.round((answer/questionsArr.length) * 100);          
       } 
-}
+      alert("Your score is" + scoreTest)
+    }
+
