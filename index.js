@@ -36,7 +36,7 @@ function runQuiz() {
            score++;
         }
       } 
-      var scoreTest = Math.round((userAnswer / questionsArr.length) * 100)
+      var scoreTest = Math.round(score / questionsArr.length * 100)
       alert("Your score is " + scoreTest + "%")    
 }
 
